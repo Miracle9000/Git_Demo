@@ -27,3 +27,4 @@ def update_plot(x_var, y_var):
 
 # Create interactive plot using ipywidgets interact function
 interact(update_plot, x_var=x_dropdown, y_var=y_dropdown)
+print("The End")
