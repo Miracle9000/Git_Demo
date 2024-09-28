@@ -5,7 +5,7 @@ import streamlit as st
 #st.write(f"So your best movie is {movie}")
 #is_clicked = st.button("Click Me")
 
-import streamlit as st
+'''import streamlit as st
 
 def main():
     st.title("AI Text Generator")
@@ -17,6 +17,43 @@ def main():
         response = "This is a generated response based on your prompt."
         st.write(f"Question : {prompt}")
         st.text_area("Response:", value=response, height=200)
+
+if __name__ == "__main__":
+    main()'''
+import streamlit as st
+
+def main():
+    st.title("AI Text Generator")
+
+    st.markdown(
+        """
+        <style>
+        .st-bb {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    with st.form("my_form"):
+        prompt = st.text_input("Enter your prompt:")
+        submit_button = st.form_submit_button("Generate")
+
+    if submit_button:
+        # Replace this with your actual AI processing logic
+        response = "This is a generated response based on your prompt."
+
+        st.markdown(
+            f"""
+            <div class="st-bb">
+                {response}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 if __name__ == "__main__":
     main()
