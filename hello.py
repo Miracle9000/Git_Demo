@@ -22,17 +22,9 @@ def main():
     )
 
     with st.form("my_form"):
-        st.markdown(
-            """
-            <style>
-            .st-bb {
-                color: red;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
-        prompt = st.text_input("Enter your prompt:")
+        
+        #prompt = st.text_input("Enter your prompt:")
+        prompt = st.text_input("Enter your prompt:", class_="st-bb")
         submit_button = st.form_submit_button("Generate")
 
     if submit_button:
