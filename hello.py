@@ -15,7 +15,7 @@ def main():
     if st.button("Generate"):
         # Replace this with your actual AI processing logic
         response = "This is a generated response based on your prompt."
-
+        st.write(f"Question : {prompt}")
         st.text_area("Response:", value=response, height=200)
 
 if __name__ == "__main__":
