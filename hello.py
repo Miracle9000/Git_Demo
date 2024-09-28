@@ -12,7 +12,7 @@ def main():
         """
         <style>
         .st-bb {
-            background-color: #f0f0f0;
+            background-color: #000000;
             border-radius: 10px;
             padding: 10px;
         }
