@@ -23,9 +23,9 @@ def main():
 
     with st.form("my_form"):
         
-        #prompt = st.text_input("Enter your prompt:")
+        prompt = st.text_input("Enter your prompt:")
         #prompt = st.text_input("Enter your prompt:", class_="st-bb")
-        prompt = st.markdown("<span style='color: blue;'>Enter your prompt:</span>", unsafe_allow_html=True)
+        #prompt = st.markdown("<span style='color: blue;'>Enter your prompt:</span>", unsafe_allow_html=True)
         submit_button = st.form_submit_button("Generate")
 
     if submit_button:
